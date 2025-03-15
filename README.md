@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Minimalist Next.js Example
+
+A clean, minimal Next.js 14 example using the Pages Router. This project is designed to be simple, well-documented, and easy to understand.
+
+## Project Structure
+
+```
+.
+├── components        # Reusable React components
+│   ├── Layout.tsx    # Main page layout wrapper
+│   └── ui            # UI components
+│       └── button.tsx# Button component
+├── lib               # Utility functions
+│   └── utils.ts      # Common utilities
+├── pages             # Next.js pages
+│   ├── _app.tsx      # Custom App component
+│   ├── _document.tsx # Custom Document component
+│   ├── api           # API routes
+│   │   └── hello.ts  # Simple API endpoint
+│   └── index.tsx     # Home page
+├── public            # Static assets
+└── styles            # Global styles
+    └── globals.css   # Global CSS styles
+```
+
+## Features
+
+- **Minimalist Design**: Clean, simple code structure
+- **Fully TypeScript**: Type-safe with TsDoc comments
+- **Pages Router**: Uses Next.js pages directory structure
+- **API Example**: Simple example of Next.js API routes
+- **Shadcn-inspired UI**: Clean, minimal UI components
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   pnpm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   pnpm dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Build for production:
 
-## Learn More
+   ```bash
+   pnpm build
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run linting:
+   ```bash
+   pnpm lint
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- React
