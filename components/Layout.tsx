@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 
 /**
  * Props for the Layout component
@@ -23,20 +22,6 @@ interface LayoutProps {
  * @param {LayoutProps} props - Component props
  * @returns {JSX.Element} The layout component
  */
-export function Layout({
-  children,
-  title = "Next.js Example",
-  description = "A minimal Next.js example with pages router",
-}: LayoutProps): JSX.Element {
-  return (
-    <div className="min-h-screen font-sans">
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      {children}
-    </div>
-  );
+export function Layout({ children }: LayoutProps): JSX.Element {
+  return <div className="min-h-screen font-sans">{children}</div>;
 }

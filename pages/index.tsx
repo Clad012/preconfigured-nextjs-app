@@ -34,29 +34,27 @@ export default function Home(): JSX.Element {
       description="A minimal Next.js example with pages router"
     >
       <div className="min-h-screen flex flex-col items-center justify-center p-4">
-        <div className="max-w-md w-full bg-card rounded-lg shadow-md p-6">
-          <h1 className="text-2xl font-bold mb-6 text-center">
-            Next.js 14 with Pages Router
-          </h1>
+        <h1 className="text-2xl font-bold mb-6 text-center">
+          Next.js 14 with Pages Router
+        </h1>
 
-          <p className="mb-6 text-center">
-            This is a minimal example demonstrating a simple page with a button
-            that calls an API endpoint.
-          </p>
+        <p className="mb-6 text-center">
+          This is a minimal example demonstrating a simple page with a button
+          that calls an API endpoint.
+        </p>
 
-          <div className="flex flex-col gap-4">
-            <Button onClick={fetchData} className="w-full">
-              Call API
-            </Button>
+        <div className="flex flex-col gap-4">
+          <Button onClick={fetchData} className="w-full">
+            Call API
+          </Button>
 
-            {message && (
-              <div className="p-4 rounded bg-muted overflow-auto max-h-40">
-                <pre className="text-sm font-mono whitespace-pre-wrap">
-                  {message}
-                </pre>
-              </div>
-            )}
-          </div>
+          {message && (
+            <div className="p-4 rounded bg-muted overflow-auto max-h-40">
+              <pre className="text-sm font-mono whitespace-pre-wrap">
+                {message}
+              </pre>
+            </div>
+          )}
         </div>
       </div>
     </Layout>
